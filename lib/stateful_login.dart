@@ -50,7 +50,7 @@ class _Stateful_Loginstate extends State<Stateful_Login>{
                ),
                TextFormField(
                  validator: (password){
-                   if(password!.isEmpty || !password.contains('@') || !password.contains('gmail.com')) {
+                   if(password!.isEmpty || password.length < 6)  {
                      return 'password must not be empty or length should be greater than 6';
                    }
                  },
