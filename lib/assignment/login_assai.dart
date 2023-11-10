@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_project_oct/assignment/Home_assai.dart';
 import 'package:flutter_project_oct/assignment/signup_assai.dart';
-import 'package:flutter_project_oct/home.dart';
-import 'package:flutter_project_oct/sign%20up.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatelessWidget {
@@ -18,7 +17,7 @@ class LoginPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         leading: IconButton(
-            onPressed: () {},
+            onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=>Home()));},
             icon: Icon(
               Icons.arrow_back_ios,
               color: Colors.black,
