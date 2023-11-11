@@ -29,5 +29,6 @@ class Advertisement extends StatelessWidget {
               }
             },
             itemCount: 12));
+
   }
 }
