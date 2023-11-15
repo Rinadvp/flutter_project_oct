@@ -46,16 +46,19 @@ class fruits extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
 
-                         Image(image:AssetImage(Fruits[index]),width: 50,),
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(name[index],style: TextStyle(
-                                  fontSize: 15,fontWeight: FontWeight.bold,),),
-                              Text(unit[index]),
-                              Text(price[index]),
-                            ],
+                         Container(width: 50,
+                             child: Image(image:AssetImage(Fruits[index]),width: 50,)),
+                          Container(width: 50,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(name[index],style: TextStyle(
+                                    fontSize: 15,fontWeight: FontWeight.bold,),),
+                                Text(unit[index]),
+                                Text(price[index]),
+                              ],
+                            ),
                           ),
                               MaterialButton(
                                   onPressed:() {},
@@ -63,7 +66,7 @@ class fruits extends StatelessWidget {
                               color: Colors.black,
                               minWidth: 120,
                               height: 40,
-                              child: Text('add to cart',style: TextStyle(color: Colors.white,),),
+                              child: Text('Add to cart',style: TextStyle(color: Colors.white,),),
 
                               )
 
