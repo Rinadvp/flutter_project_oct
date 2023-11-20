@@ -54,7 +54,7 @@ SliverGridDelegateWithFixedCrossAxisCount(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Icon(icons[index]),
-            SizedBox(
+            const SizedBox (
               width: 8-0,
               child: Text('Heart Shaker',maxLines:2,style: TextStyle(
 
