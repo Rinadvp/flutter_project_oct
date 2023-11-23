@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:flutter_project_oct/Gridview/Gridview3.dart';
 
 void main(){
   runApp(MaterialApp(
@@ -19,7 +20,11 @@ class tabbar extends StatelessWidget{
           title:  Text('Tabbar'),
           bottom:  TabBar(tabs: [Text('Chat'),Text('Call'),Text('Status')]),
         ),
-body: Center(child: Text('Hello')),
+      body: TabBarView(
+          children: [gridview3(),
+            Center(child: Text('call'),),
+            Icon(Icons.person)
+          ]),
       ),
     );
   }
